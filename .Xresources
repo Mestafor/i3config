@@ -52,9 +52,9 @@ URxvt.letterSpace: 0
 !    xft:unifont:medium
 !URxvt*boldFont:xft:xos4Terminus:size=12, \
 !    xft:unifont:medium
-URxvt*font:xft:monospace:size=10, \
+URxvt*font:xft:System San Francisco Display:size=10, \
     xft:unifont:medium
-URxvt*boldFont:xft:monospace:size=10, \
+URxvt*boldFont:xft:System San Francisco Display:size=10, \
     xft:unifont:medium
 
 !
