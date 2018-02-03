@@ -25,7 +25,7 @@ URxvt.tabbed.tab-bg: 0
 ! URLs
 !
 
-URxvt.matcher.rend.0: Uline Bold fg6
+!URxvt.matcher.rend.0: Uline Bold fg6
 URxvt.keysym.Control-l: perl:matcher:last
 URxvt.keysym.Control-u: perl:matcher:list
 
@@ -33,7 +33,7 @@ URxvt.keysym.Control-u: perl:matcher:list
 ! Clickable URLs
 !
 
-URxvt.url-launcher: firefox
+URxvt.url-launcher: google-chrome
 URxvt.matcher.button: 1
 
 !
@@ -52,10 +52,12 @@ URxvt.letterSpace: 0
 !    xft:unifont:medium
 !URxvt*boldFont:xft:xos4Terminus:size=12, \
 !    xft:unifont:medium
-URxvt*font:xft:System San Francisco Display:size=10, \
-    xft:unifont:medium
-URxvt*boldFont:xft:System San Francisco Display:size=10, \
-    xft:unifont:medium
+!URxvt*font:xft:System San Francisco Display:size=10, \
+    !xft:unifont:medium
+!URxvt*boldFont:xft:System San Francisco Display:size=10, \
+    !xft:unifont:medium
+
+URxvt.font: xft:System San Francisco Display:size=9,Source Code Pro Semibold:size=9,xft:DejaVu Sans Mono for Powerline:size=9,xft:FontAwesome:size=9
 
 !
 ! Select text with the keyboard
@@ -89,7 +91,7 @@ Xcursor.theme: Vanilla-DMZ
 !
 
 !rofi.monitor: 0
-rofi.font: Terminus 12
+rofi.font: System San Francisco Display 12
 
 ! Solarized.theme
 rofi.color-enabled: true
@@ -154,4 +156,4 @@ URxvt.color14:		S_base1
 URxvt.color15: S_base3
 
 URxvt*transparent: true
-URxvt*shading: 10
+URxvt*shading: 5
