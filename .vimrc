@@ -10,6 +10,15 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" JS
+Plug 'pangloss/vim-javascript', {'for': 'js'}
+" Typescript
+Plug 'leafgarland/typescript-vim'
+" Scss
+Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 "colorschemes
 Plug 'morhetz/gruvbox'
 
@@ -30,3 +39,4 @@ set incsearch
 "mappings
 map <C-n> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
+nmap <F8> :TagbarToggle<CR>
