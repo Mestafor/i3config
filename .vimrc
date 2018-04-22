@@ -40,18 +40,21 @@ Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 "colorschemes
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'whatyouhide/vim-gotham'
+Plug 'joshdick/onedark.vim'
 
 " Initialize plugin system
 call plug#end()
 
 " Settings
 set autoread
-syntax enable
+syntax on 
 set t_Co=256
 
 syntax on
 let g:mapleader=','
-colorscheme gruvbox
+colorscheme onedark 
 set background=dark
 
 set tabstop=2
