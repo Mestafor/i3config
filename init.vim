@@ -14,6 +14,7 @@ Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
 "HTML
 Plug 'gregsexton/MatchTag', { 'for': ['html', 'javascript'] }
 Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript'] }
