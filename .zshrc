@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export TERM="xterm-256color"
-export VISUAL="vim"
+export VISUAL="nvim"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export LANG="en_US.UTF-8"
 # Path to your oh-my-zsh installation.

@@ -15,9 +15,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'SirVer/ultisnips'
+Plug 'ryanoasis/vim-devicons'
 "HTML
 Plug 'gregsexton/MatchTag', { 'for': ['html', 'javascript'] }
-Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript', 'scss', 'css'] }
 Plug 'othree/html5.vim', { 'for': ['html', 'javascript'] }
 Plug 'tpope/vim-haml', { 'for': 'haml'}
 "SCSS, CSS
@@ -34,8 +36,8 @@ Plug 'maksimr/vim-jsbeautify', { 'for': 'javascript' }
 Plug 'wizicer/vim-jison', { 'for': 'jison' }
 Plug 'posva/vim-vue', { 'for': ['javascript', 'typescript'] }
 " Typescript
-Plug 'ianks/vim-tsx'
-Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx', { 'for': 'typescript' }
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'clausreinke/typescript-tools.vim', { 'do': 'npm install', 'for': 'typescript' }
 Plug 'Quramy/tsuquyomi', { 'for': 'typescript'}
 Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
@@ -51,6 +53,7 @@ Plug 'joshdick/onedark.vim'
 call plug#end()
 
 " Settings
+set encoding=UTF-8
 set autoread
 syntax on 
 set t_Co=256
@@ -88,11 +91,17 @@ map <c-f> :call JsBeautify()<cr>
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 " for json
 autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
-" for tsx
-autocmd FileType tsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
 " for jsx
 autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
 " for html
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+" html
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+let g:syntastic_style_error_symbol = '⚡'
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
