@@ -69,6 +69,9 @@ Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'whatyouhide/vim-gotham'
 Plug 'joshdick/onedark.vim'
+Plug 'sickill/vim-monokai', {'as': 'monokai'}
+Plug 'HenryNewcomer/vim-theme-papaya'
+Plug 'chriskempson/tomorrow-theme'
 
 " Initialize plugin system
 call plug#end()
@@ -76,13 +79,13 @@ call plug#end()
 " Settings
 set encoding=UTF-8
 set autoread
-syntax on 
 set t_Co=256
 
 syntax on
 let g:mapleader=','
 colorscheme onedark 
 set background=dark
+"highlight Normal ctermfg=grey ctermbg=grey
 
 set tabstop=2
 set shiftwidth=2
