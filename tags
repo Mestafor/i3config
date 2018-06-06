@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<C-n>	init.vim	/^map <C-n> :NERDTreeToggle<CR>$/;"	m
+<F8>	init.vim	/^nmap <F8> :TagbarToggle<CR>$/;"	m
+<Leader>	init.vim	/^map <Leader> <Plug>(easymotion-prefix)$/;"	m
+<c-f>	init.vim	/^map <c-f> :call JsBeautify()<cr>$/;"	m
+DoRemote	init.vim	/^function! DoRemote(arg)$/;"	f
+g:deoplete#enable_at_startup	init.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
+g:deoplete#enable_camel_case	init.vim	/^let g:deoplete#enable_camel_case = 1$/;"	v
+g:deoplete#enable_ignore_case	init.vim	/^let g:deoplete#enable_ignore_case = 1$/;"	v
+g:deoplete#enable_refresh_always	init.vim	/^let g:deoplete#enable_refresh_always = 1$/;"	v
+g:deoplete#enable_smart_case	init.vim	/^let g:deoplete#enable_smart_case = 1$/;"	v
+g:deoplete#max_abbr_width	init.vim	/^let g:deoplete#max_abbr_width = 0$/;"	v
+g:deoplete#max_menu_width	init.vim	/^let g:deoplete#max_menu_width = 0$/;"	v
+g:deoplete#omni#input_patterns	init.vim	/^let g:deoplete#omni#input_patterns = get(g:,'deoplete#omni#input_patterns',{})$/;"	v
+g:mapleader	init.vim	/^let g:mapleader=','$/;"	v
+g:syntastic_always_populate_loc_list	init.vim	/^let g:syntastic_always_populate_loc_list = 1$/;"	v
+g:syntastic_auto_loc_list	init.vim	/^let g:syntastic_auto_loc_list = 1$/;"	v
+g:syntastic_check_on_open	init.vim	/^let g:syntastic_check_on_open = 1$/;"	v
+g:syntastic_check_on_wq	init.vim	/^let g:syntastic_check_on_wq = 0$/;"	v
+g:syntastic_error_symbol	init.vim	/^let g:syntastic_error_symbol = '✗'$/;"	v
+g:syntastic_javascript_checkers	init.vim	/^let g:syntastic_javascript_checkers = ['eslint']$/;"	v
+g:syntastic_javascript_eslint_exe	init.vim	/^let g:syntastic_javascript_eslint_exe = 'npm run lint --'$/;"	v
+g:syntastic_style_error_symbol	init.vim	/^let g:syntastic_style_error_symbol = '⚡'$/;"	v
+g:syntastic_warning_symbol	init.vim	/^let g:syntastic_warning_symbol = '⚠'$/;"	v
+g:user_emmet_install_global	init.vim	/^let g:user_emmet_install_global = 0$/;"	v
